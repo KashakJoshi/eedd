@@ -1,0 +1,36 @@
+# include <stdio.h>
+int main() 
+ {
+ int matrix[3][4], i, j, sum=0;
+ 
+ printf("\nEnter elements of matrix");
+ 
+ for(i=0; i<3; i++)
+ {
+ for(j=0; j<4; j++)
+   {
+     scanf("%d", &matrix[i][j]);
+     
+   }
+ }
+ 
+ printf("your matrix is\n"); 
+ 
+ for(i=0; i<3; i++)
+ {
+ for(j=0; j<4; j++)
+   {
+     printf("\t%d", matrix[i][j]);
+     sum=sum+matrix[i][j];
+   }
+   printf("\n");
+ }
+ 
+ printf("\nSum of elements of your matrix is ");
+ 
+ 
+ 
+ printf("\n%d", sum);
+ 
+ return 0;
+ }
